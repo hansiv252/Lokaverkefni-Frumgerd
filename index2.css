@@ -90,6 +90,11 @@ figcaption
     font-style: italic;
     font-size: .9em;
 }
+.img1 {
+    float: left;
+    width: 100%;
+    
+}
 
 
 
