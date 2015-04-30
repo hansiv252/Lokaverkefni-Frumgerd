@@ -10,7 +10,7 @@ function ActivateOverlay() {
 	overlayBox.style.zIndex = "900";
 	overlayBox.style.width = "100%";
 	overlayBox.style.height = "100%";
-	overlayBox.style.opacity = "0.85";
+	overlayBox.style.opacity = "0.4";
 
 	form = document.createElement("div");
 	form.innerHTML = "Hello";
