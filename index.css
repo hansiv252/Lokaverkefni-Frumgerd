@@ -76,6 +76,23 @@ figure {
     background-color: #475077;
 }
 
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: #475F77; /* this is a green */
+}
+
+.button-success {
+    bottom: 0px;
+}
+
 
 blockquote.blockquoteClass {
   font: 14px/22px normal helvetica, sans-serif;
@@ -97,6 +114,12 @@ blockquote.blockquoteClass {
     h1
     {
         font-size: 2.5em;
+    }
+
+    img
+    {
+        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -407,11 +430,6 @@ input[type=radio]:checked ~ label ~ .content {
 
 
 
-/* -- Responsive Styles (Media Queries) ------------------------------------- */
-
-/*
-Hides the menu at `48em`, but modify this based on your app's needs.
-*/
 @media (min-width: 48em) {
 
     .header,
@@ -421,4 +439,91 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 
     
+}
+
+
+
+
+
+
+
+.OverlayBox {
+    -webkit-transition: opacity 3s;
+    transition: opacity 3s;
+
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0;
+
+    z-index: -999;
+
+    position: absolute;
+    width: 0%;
+    height: 0%;
+
+    top: 0px;
+    left: 0px;
+/*
+    -webkit-animation-name: dropdown;
+    -webkit-animation-duration: 3s;
+    animation-name: dropdown;
+    animation-duration: 3s;
+*/
+}
+
+.animationIn
+{
+    -webkit-animation-name: dropdownEnter;
+    -webkit-animation-duration: 1.5s;
+    animation-name: dropdownEnter;
+    animation-duration: 1.5s;
+
+    -webkit-animation-timing-function: ease-out; /* Chrome, Safari, Opera */
+    animation-timing-function: ease-out;
+}
+
+.animationOut
+{
+    -webkit-animation-name: dropdownExit;
+    -webkit-animation-duration: 1.5s;
+    animation-name: dropdownExit;
+    animation-duration: 1.5s;
+
+    -webkit-animation-timing-function: ease-in; /* Chrome, Safari, Opera */
+    animation-timing-function: ease-in;
+}
+
+.formClass {
+    z-index: 901;
+
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    background-color: #5E5E5E;
+    border-radius: 10px;
+
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dropdownEnter {
+    from {top: -150%;}
+    to {top: 0; bottom: 0;}
+}
+
+@keyframes dropdownEnter {
+    from {top: -150%;}
+    to {top: 0; bottom: 0;}
+}
+
+
+@-webkit-keyframes dropdownExit {
+    from {top: 0; bottom: 0;}
+    to {top: -150%;}
+}
+
+@keyframes dropdownExit {
+    from {top: 0; bottom: 0;}
+    to {top: -150%;}
 }

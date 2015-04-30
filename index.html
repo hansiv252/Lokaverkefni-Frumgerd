@@ -22,6 +22,11 @@
 
     <body>
 
+    <div id="OverlayContainer" class="OverlayBox" onclick="CloseForm()"></div>
+    <div id="formContainer"></div>
+
+    
+
     <div class="custom-wrapper pure-g" id="menu">
         <div class="pure-u-1 pure-u-md-1-3">
             <div class="pure-menu">
@@ -41,8 +46,8 @@
         <div class="pure-u-1 pure-u-md-1-3">
             <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
                 <ul class="pure-menu-list">
-                    <li class="pure-menu-item"><a href="https://www.owasp.org/index.php/Defense_in_depth" class="pure-menu-link">Defensive measures</a></li>
                     <li class="pure-menu-item"><a href="https://github.com/OWASP" class="pure-menu-link">OWASP GitHub</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link" onclick="ActivateOverlay(); return false">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -87,17 +92,17 @@
                 <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-8-24">
                     <h4><span class="glyphicon glyphicon-pushpin"></span>OWASP</h4>
                     <p>The Open Web Application Security Project is an online community dedicated to web application security. The OWASP community includes corporations, educational organizations and individuals from around the world.</p>
-                    <p><a href="#" class="">Read more >></a></p>
+                    <a href="https://www.owasp.org/index.php/Main_Page"><button class="button-success pure-button">Visit page</button></a>
                 </div>
                 <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-8-24">
                     <h4><span class="glyphicon glyphicon-ok"></span>Defcon</h4>
                     <p>Defcon is a hacking conference held in Paris and Las Vegas where the brains of our future show us hacks and exploits that can for example control cars remotely.</p>
-                    <p><a href="#" class="">Read more >></a></p>
+                    <a href="https://www.defcon.org/"><button class="button-success pure-button">Visit page</button></a>
                 </div>
                 <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-8-24">
                     <h4><span class="glyphicon glyphicon-heart"></span>Syndis</h4>
                     <p>Syndis is a cyber security firm based in the University of Reykjavík. Syndis specializes in cyber threats and defenses.</p>
-                    <p><a href="#" class="">Read more >></a></p>
+                    <a href="http://www.syndis.is/"><button class="button-success pure-button">Visit page</button></a>
                 </div>
                 <div class="pure-u-1 pure-u-sm-12-24 pure-u-md-12-24 pure-u-lg-1">
                     <h4><span class="glyphicon glyphicon-cutlery"></span>Hats</h4>
@@ -107,7 +112,7 @@
                     Black hat: Individual or company that are sometimes called hacktivists and they do not care about the governments' rules of engagement with the internet. They break into systems without consent.<br>
                     Gray hat: Individual or company that has the power to do good and evil on the internet and mixes them together at his/her own will.
                     </p>
-                    <p><a href="#" class="">Read more >></a></p>
+                    <a href="http://en.wikipedia.org/wiki/Hacker_(computer_security)#White_hat"><button class="button-success pure-button">Visit page</button></a>
                 </div>
             </section><!-- end nested row -->
         </article>
@@ -138,5 +143,6 @@
         </footer>
 
         <script type="text/javascript" src = "PulloutJS.js"></script>
+        <script type="text/javascript" src = "Overlay.js"></script>
     </body>
 </html>
