@@ -235,6 +235,9 @@ The content `<div>` is where all your content goes.
   min-height: 600px;
   clear: both;
   margin: 25px 0;
+
+    margin-left: 0%;
+    margin-right: 0%;
 }
 .tab {
   float: left;
@@ -443,7 +446,10 @@ input[type=radio]:checked ~ label ~ .content {
         padding-right: 2em;
     }
 
-    
+    .tabs {
+        margin-left: 18%;
+        margin-right: 18%;
+    }
 }
 
 

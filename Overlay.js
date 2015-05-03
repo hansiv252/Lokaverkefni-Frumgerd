@@ -12,9 +12,7 @@ function ActivateOverlay() {
 	overlayBox.style.height = "100%";
 	overlayBox.style.opacity = "0.4";
 
-	form = document.createElement("div");
-	form.innerHTML = "Hello";
-	form.style.color = "red";
+	form = document.getElementById("form");
 	form.setAttribute("class", "formClass animationIn");
 
 	//form.style.opacity = "0";
@@ -23,7 +21,6 @@ function ActivateOverlay() {
 
 	container.appendChild(form);
 	formOpen = true;
-
 }
 
 function CloseForm() {
