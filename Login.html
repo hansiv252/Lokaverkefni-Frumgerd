@@ -47,7 +47,7 @@
             <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item"><a href="https://github.com/OWASP" class="pure-menu-link">OWASP GitHub</a></li>
-                    <li class="pure-menu-item"><a href="#" class="pure-menu-link" onclick="ActivateOverlay(); return false">Login</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -67,13 +67,13 @@
                             <h3 class="pure-u-1">Sign In</h3>
                             <fieldset class="pure-group">
                                 <input type="text" class="pure-input-1" placeholder="Username" required>
-                                <input type="text" class="pure-input-1" placeholder="Password" required>
-                                <input type="email" class="pure-input-1" placeholder="Email" required>
+                                <input type="password" class="pure-input-1" placeholder="Password" required>
+                                <input type="email" class="pure-input-1" placeholder="Email" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
                             </fieldset>
 
                             <fieldset class="pure-group">
-                                <input type="text" class="pure-input-1" placeholder="Another Group" required>
-                                <input type="text" class="pure-input-1" placeholder="More Stuff" required>
+                                <input type="text" class="pure-input-1" placeholder="Another Group">
+                                <input type="text" class="pure-input-1" placeholder="More Stuff">
                             </fieldset>
 
                             <button type="submit" class="pure-button pure-input-1 pure-button-primary">Sign in</button>
@@ -101,7 +101,7 @@
 
                                 <div class="pure-control-group ">
                                     <label for="email">Email Address</label>
-                                    <input id="email" type="email" placeholder="Email Address" class="pure-input-1" required>
+                                    <input id="email" type="email" placeholder="Email Address" class="pure-input-1" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$">
                                 </div>
 
                                 <div class="pure-control-group">

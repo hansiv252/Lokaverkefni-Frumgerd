@@ -126,6 +126,29 @@ blockquote.blockquoteClass {
         max-width: 100%;
         width: 100%;
     }
+
+    .tabs {
+        position: relative;   
+        min-height: 600px;
+        clear: both;
+        margin: 25px 0;
+
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .header,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    
+
+    .tableClass {
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 80em) /* 1280px */
@@ -228,7 +251,22 @@ The content `<div>` is where all your content goes.
 }
 
 
+.everything {
+    position: absolute;
 
+    -webkit-animation-name: dropdownEnter;
+    -webkit-animation-duration: 1.5s;
+    animation-name: dropdownEnter;
+    animation-duration: 1.5s;
+
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+
+.tableClass {
+    margin: 0 auto;
+    width: 100%;
+}
 
 .tabs {
   position: relative;   
@@ -236,8 +274,8 @@ The content `<div>` is where all your content goes.
   clear: both;
   margin: 25px 0;
 
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 .tab {
   float: left;
@@ -424,33 +462,6 @@ input[type=radio]:checked ~ label ~ .content {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 48em) {
-
-    .header,
-    .content {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
-    .tabs {
-        margin-left: 18%;
-        margin-right: 18%;
-    }
-}
 
 
 
